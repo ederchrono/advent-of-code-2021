@@ -1,4 +1,4 @@
-const input = `191
+module.exports = `191
 192
 201
 205
@@ -1998,17 +1998,3 @@ const input = `191
 5787
 5783
 5791`
-
-const inputArray = input.split('\n')
-console.log(inputArray.length)
-
-let prev = null
-let count = 0
-inputArray.forEach((number) => {
-  if(prev && parseInt(number) > prev) {
-    count++
-  }
-  prev = parseInt(number)
-})
-
-console.log('result =', count)
